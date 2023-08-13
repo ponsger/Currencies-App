@@ -1,0 +1,11 @@
+.navbar-ul__li{
+    color: #eee;
+    margin: auto 1%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-ul__li:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
