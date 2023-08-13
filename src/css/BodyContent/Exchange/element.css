@@ -1,0 +1,14 @@
+.base{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border:none;
+    outline: none;
+}
+
+.option{
+    background-color: black;
+    color: white;
+    border:1px solid #ddd
+}
+
