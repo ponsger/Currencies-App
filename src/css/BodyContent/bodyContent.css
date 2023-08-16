@@ -1,0 +1,9 @@
+.bodyContent{
+    background: url('../../../public/img/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    width: 100%;
+    /* transform: rotate3d(0, 1, 0, -45deg); */
+}

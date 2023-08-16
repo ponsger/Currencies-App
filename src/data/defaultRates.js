@@ -1,0 +1,1 @@
+export const rates = ["EUR", "XAU", "XAG", "USD", "MXN"]
