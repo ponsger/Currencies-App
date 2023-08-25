@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "style-loader": "^3.3.3",
+    "uuid": "^9.0.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },

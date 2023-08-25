@@ -1,9 +1,9 @@
 const path = require('path');
-const webpack=require('webpack');
-const HtmlWebpackPlugin= require('html-webpack-plugin');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    
+
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -23,22 +23,26 @@ module.exports = {
                     }
                 },
                 exclude: /node_modules/,
-                resolve :{
-                    extensions: ['.js','.jsx']
+                resolve: {
+                    extensions: ['.js', '.jsx']
                 }
             },
             {
-                test:/\.css$/,
-                use: ['style-loader','css-loader'],
-                resolve:{
-                    extensions:['.css']
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+                resolve: {
+                    extensions: ['.css']
                 }
             },
         ]
     },
+    devServer: {
+        port:3000,
+        open:true
+    },
 
     plugins: [
         new webpack.ProgressPlugin(),
-        new HtmlWebpackPlugin({template: './src/index.html'})
+        new HtmlWebpackPlugin({ template: './src/index.html' })
     ]
 }

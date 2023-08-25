@@ -1,3 +1,4 @@
+import '../css/BodyContent/Exchange/base-element.css'
 import '../css/BodyContent/Exchange/element.css'
 
 
@@ -12,11 +13,11 @@ function Exchange() {
 
     const [rates, setRates] = useState([...defaultRates]);
     const [currencies, setCurrencies] = useState({});
-    const [base,setBase]=useState("BTC");
+    const [base, setBase] = useState("BTC");
 
-    const handleChangeBase = (e) =>{
+    const handleChangeBase = (e) => {
         setBase(e.target.value);
-    } 
+    }
 
     const getAllCurrencies = () => {
         console.log(base);
@@ -42,10 +43,12 @@ function Exchange() {
                     "Loading..."
                 }
             </div>
+
             <div className='rates'>
                 {currencies.rates ?
                     <ShowRates rates={rates} currencies={Object.entries(currencies.rates)} />
-                    : "Loading..."}
+                    : "Loading..."
+                }
 
             </div>
         </section>
