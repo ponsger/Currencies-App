@@ -1,5 +1,6 @@
 import '../css/BodyContent/bodyContent.css'
 import '../css/BodyContent/content.css'
+import '../css/BodyContent/News/news-content.css'
 
 import React, { Suspense } from 'react';
 const Exchange = React.lazy(() => import('./Exchange'));
@@ -11,7 +12,7 @@ function BodyContent() {
     return (
         <section className="bodyContent">
             <div className="content">
-                <div>
+                <div className='news-content'>
                     <Suspense fallback={<div>Loading...</div>}>
                         <News />
                     </Suspense>
