@@ -1,7 +1,3 @@
-import './css/Navbar/navbar.css'
-import './css/Navbar/navbar-ul.css'
-import './css/Navbar/navbar-ul-li.css'
-
 import Navbar from './components/Navbar';
 import News from './components/News';
 import Exchange from './components/Exchange';

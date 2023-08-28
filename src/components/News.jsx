@@ -1,10 +1,11 @@
-import '../css/BodyContent/News/news-card.css'
-import '../css/BodyContent/News/news-image.css'
-import '../css/BodyContent/News/news-information.css'
-import '../css/BodyContent/News/news-title.css'
-import '../css/BodyContent/News/news-description.css'
-import '../css/BodyContent/News/news-link.css'
-import '../css/BodyContent/News/more-news.css'
+import '../css/BodyContent/News/news-content.css';
+import '../css/BodyContent/News/news-card.css';
+import '../css/BodyContent/News/news-image.css';
+import '../css/BodyContent/News/news-information.css';
+import '../css/BodyContent/News/news-title.css';
+import '../css/BodyContent/News/news-description.css';
+import '../css/BodyContent/News/news-link.css';
+import '../css/BodyContent/News/more-news.css';
 
 import { Fragment, useEffect, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
