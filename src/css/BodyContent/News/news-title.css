@@ -1,0 +1,15 @@
+.news-title{
+    font-size: 1.3rem;
+    color:#dddd3d;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+@media (max-width:350px) {
+    .news-title{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}

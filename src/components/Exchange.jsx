@@ -1,13 +1,11 @@
+import '../css/BodyContent/Exchange/exchange.css'
 import '../css/BodyContent/Exchange/base-element.css'
 import '../css/BodyContent/Exchange/element.css'
-
 
 import { useEffect, useState } from 'react';
 import ShowRates from './ShowRates';
 import { rates as defaultRates } from '../data/defaultRates';
 import { apiKey } from '../data/apiKey';
-
-import { staticData } from '../data/staticData'
 
 function Exchange() {
 
@@ -19,10 +17,10 @@ function Exchange() {
         setBase(e.target.value);
     }
 
-    const getAllCurrencies = () => {
-        console.log(base);
-        // fetch(`https://api.metalpriceapi.com/v1/latest?api_key=${apiKey}&base=btc&currencies=`);
-        setCurrencies(staticData);
+    const getAllCurrencies = async() => {
+        const currenciesRequest= await fetch(`https://api.metalpriceapi.com/v1/latest?api_key=${apiKey}&base=BTC`);
+        const currenciesData = await currenciesRequest.json();
+        setCurrencies(currenciesData);
     }
 
     useEffect(() => {

@@ -1,0 +1,13 @@
+.more-news{
+    border: 1px solid #dddd3d;
+    padding: 10px;
+    align-self: center;
+    cursor: pointer;
+    color: dddd3d;
+}
+
+.more-news:hover{
+    background-color: #dddd3d;
+    color: black;
+    text-shadow: 0 0 5px black;
+}
