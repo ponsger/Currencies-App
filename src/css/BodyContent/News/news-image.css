@@ -1,0 +1,6 @@
+.news-image{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    height: 6rem;
+}
