@@ -1,0 +1,35 @@
+.news-card{
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 5px #ddc016;
+    padding: 1%;
+    margin: 10px;
+}
+
+.news-card:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+
+@media (max-width:1350px) {
+    .news-card{
+        gap: 10px;
+        width: 75%;
+    }
+}
+
+@media (max-width:550px) {
+    .news-card{
+        flex-direction: column-reverse;
+    }
+    .news-card:nth-child(2n){
+        flex-direction: column-reverse;
+    }
+    
+    
+}

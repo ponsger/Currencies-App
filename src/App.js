@@ -1,13 +1,31 @@
-import Navbar from './components/Navbar'
-import BodyContent from './components/BodyContent';
+import './css/Navbar/navbar.css'
+import './css/Navbar/navbar-ul.css'
+import './css/Navbar/navbar-ul-li.css'
+
+import Navbar from './components/Navbar';
+import News from './components/News';
+import Exchange from './components/Exchange';
+import Graphics from './components/Graphics';
+import About from './components/About'
+import NoPage from './components/NoPage';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-    return ( 
+    return (
         <main>
+            <BrowserRouter>
             <Navbar />
-            <BodyContent />
+                <Routes>
+                    <Route index path="/" element={<News />}></Route>
+                    <Route path='/exchange' element={<Exchange />} ></Route>
+                    <Route path='/graphics' element={<Graphics />}></Route>
+                    <Route path='/about' element={<About />}></Route>
+                    <Route path='*' element={<NoPage />} ></Route>
+                </Routes>
+            </BrowserRouter>
         </main>
-     );
+    );
 }
 
 export default App;

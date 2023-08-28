@@ -1,0 +1,7 @@
+.news-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 70%;
+}
